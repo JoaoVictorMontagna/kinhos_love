@@ -1,0 +1,5 @@
+CLICKHOUSE_HOST = "uo6tv5ppoy.us-east-2.aws.clickhouse.cloud"
+CLICKHOUSE_PORT = 8123
+CLICKHOUSE_USER = "default"
+CLICKHOUSE_PASSWORD = "k.XKM10YveR0i"
+CLICKHOUSE_DATABASE = "default"

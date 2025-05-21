@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.error {
+    color: #dc3545;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    display: none;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.alert {
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+/* Estilos para o login */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.card.shadow {
+    border-radius: 0.5rem;
+}
+
+/* Estilos para os gráficos */
+canvas {
+    max-width: 100%;
+}
+
+.table-falhas td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+.table-falhas td div {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+
+.table-falhas th {
+    background-color: #001E62 !important;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+.table-falhas td div:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.cards-pontos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+
+.card-ponto {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,30,98,0.08);
+    padding: 20px 18px 16px 18px;
+    min-width: 200px;
+    max-width: 260px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s;
+}
+.card-ponto:hover {
+    box-shadow: 0 4px 20px rgba(0,30,98,0.16);
+}
+.card-ponto-header {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #001E62;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+.card-ponto-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.badge-falha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e3eafc;
+    color: #001E62;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.98em;
+    margin-bottom: 4px;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(0,30,98,0.04);
+}
+.badge-falha .pct {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-left: 8px;
+}
+@media (max-width: 900px) {
+    .cards-pontos-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .card-ponto {
+        max-width: 100%;
+        min-width: 0;
+    }
+} 
